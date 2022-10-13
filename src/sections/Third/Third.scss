@@ -24,7 +24,7 @@
     }
 
     .top {
-      border-bottom: 0.1rem solid #ddd;
+      // border-bottom: 0.1rem solid #ddd;
 
       .title_box {
         margin-bottom: 3.5rem;
@@ -67,14 +67,14 @@
               .tech_list {
                 display: flex;
                 justify-content: flex-start;
-                margin-left: 5rem;
+                margin-left: -2.2rem;
 
                 >li {
                   width: 10rem;
 
                   figure {
                     outline: 1px solid #000;
-                    margin: 0 auto;
+                    margin: 0 auto .5rem auto;
                     width: 5rem;
                     height: 5rem;
                   }
@@ -88,15 +88,22 @@
           }
 
           &.left {
-            border-right: 0.1rem solid #ddd;
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: -10.5rem;
+              right: -3%;
+              width: 0.1rem;
+              height: 79rem;
+              background-color: #ddd;
+            }
           }
 
-          // &.right {
-          //   .sub_desc {
-          //     justify-content: center;
-          //   }
-          // }
-
+          &.right {
+            margin-left: 1.5rem;
+          }
 
           .desc {
             h5 {
@@ -125,6 +132,16 @@
 
           }
         }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      gap: 2.5rem;
+
+      >figure {
+        outline: 1px solid #000;
+        flex: 1;
       }
     }
   }

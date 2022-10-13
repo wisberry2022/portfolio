@@ -4,6 +4,8 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import First from './sections/First/First';
 import Second from './sections/Second/Second';
 import Third from './sections/Third/Third';
+import Fourth from './sections/Fourth/Fourth';
+import Fifth from './sections/Fifth/Fifth';
 const anchors = ['firstSection', 'secondSection', 'thirdSection'];
 
 const FullPage = () => (
@@ -24,10 +26,8 @@ const FullPage = () => (
           <First />
           <Second />
           <Third />
-          <div className="section">
-            <p>Section 3</p>
-          </div>
-
+          <Fourth />
+          <Fifth />
         </ReactFullpage.Wrapper>
       );
     }}

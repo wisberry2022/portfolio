@@ -75,10 +75,14 @@ const Third = () => {
               <InfoTemplate data={dataList[1]} />
             </div>
           </div>
-
         </div>
         <div className="bottom">
-          bye
+          <figure className="left">
+
+          </figure>
+          <figure className="right">
+
+          </figure>
         </div>
       </div>
     </div>

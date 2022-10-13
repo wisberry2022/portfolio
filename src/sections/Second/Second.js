@@ -36,7 +36,7 @@ const Second = () => {
   const descList = [
     { id: 1, title: '배포/링크', icon: false, list: ['HEROKU'] },
     { id: 2, title: '구현중점', icon: false, list: ['CRUD 구현', '로그인/로그아웃 상태유지'] },
-    { id: 3, title: '사용기술', icon: true, list: ['react', 'redux-toolkit', 'redux-persist', 'mongoDB', 'scss'] },
+    { id: 3, title: '사용기술', icon: true, list: ['scss', 'react', 'redux-toolkit', 'redux-persist', 'mongoDB', 'ExpressJS'] },
   ];
   return (
     <div className="section bg_set second">
