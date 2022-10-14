@@ -61,31 +61,34 @@ const Third = () => {
     },
   ];
   return (
-    <div className="section bg_set third">
-      <div className="container">
-        <div className="top">
-          <div className="title_box">
-            <h4 className="div_title">SIDE PROJECT (REACT)</h4>
-          </div>
-          <div className="info_desc">
-            <div className="left">
-              <InfoTemplate data={dataList[0]} />
+    <>
+      <div className="section bg_set third">
+        <div className="container">
+          <div className="top">
+            <div className="title_box">
+              <h4 className="div_title">SIDE PROJECT (REACT)</h4>
             </div>
-            <div className="right">
-              <InfoTemplate data={dataList[1]} />
+            <div className="info_desc">
+              <div className="left">
+                <InfoTemplate data={dataList[0]} />
+              </div>
+              <div className="right">
+                <InfoTemplate data={dataList[1]} />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="bottom">
-          <figure className="left">
+          <div className="bottom">
+            <figure className="left">
 
-          </figure>
-          <figure className="right">
+            </figure>
+            <figure className="right">
 
-          </figure>
+            </figure>
+          </div>
         </div>
       </div>
-    </div>
+    </>
+
   )
 }
 

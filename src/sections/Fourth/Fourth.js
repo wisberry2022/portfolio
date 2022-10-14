@@ -27,45 +27,47 @@ const Fourth = () => {
     { id: 5, title: 'site5', link: 'Lorem ipsum dolor sit amet' },
   ]
   return (
-    <div className="section bg_set fourth">
-      <div className="container">
-        <div className="grid_box">
-          <div className="intro">
-            <h3 className="div_title">TOY PROJECT</h3>
-            <div className="info_desc">
-              <strong>프로젝트 소개</strong>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure similique deleniti nostrum fugit. Nam nobis quidem eum hic iusto veniam aperiam magni, nisi et ut maiores consequuntur! Doloribus, velit quia!
-              </p>
+    <>
+      <div className="section bg_set fourth">
+        <div className="container">
+          <div className="grid_box">
+            <div className="intro">
+              <h3 className="div_title">TOY PROJECT</h3>
+              <div className="info_desc">
+                <strong>프로젝트 소개</strong>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure similique deleniti nostrum fugit. Nam nobis quidem eum hic iusto veniam aperiam magni, nisi et ut maiores consequuntur! Doloribus, velit quia!
+                </p>
+              </div>
+              <ul className="desc_list">
+                {dataList.map(it => {
+                  return (
+                    <li key={it.id}>
+                      <strong>{it.title}</strong>
+                      {typeof it.contents === 'object' ?
+                        <ul className="sub_list">
+                          {it.contents.map((its, idx) => {
+                            return (
+                              <li key={idx}>
+                                {it.icon ? <figure className={`bg_set itm0${idx + 1}`}></figure> : null}
+                                <strong>{its}</strong>
+                              </li>
+                            )
+                          })}
+                        </ul>
+                        : <span>{it.contents}</span>}
+                    </li>
+                  )
+                })}
+              </ul>
             </div>
-            <ul className="desc_list">
-              {dataList.map(it => {
-                return (
-                  <li key={it.id}>
-                    <strong>{it.title}</strong>
-                    {typeof it.contents === 'object' ?
-                      <ul className="sub_list">
-                        {it.contents.map((its, idx) => {
-                          return (
-                            <li key={idx}>
-                              {it.icon ? <figure className={`bg_set itm0${idx + 1}`}></figure> : null}
-                              <strong>{its}</strong>
-                            </li>
-                          )
-                        })}
-                      </ul>
-                      : <span>{it.contents}</span>}
-                  </li>
-                )
-              })}
-            </ul>
+            {siteList.map(it => {
+              return <ToyTemplate key={it.id} data={it} />
+            })}
           </div>
-          {siteList.map(it => {
-            return <ToyTemplate key={it.id} data={it} />
-          })}
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

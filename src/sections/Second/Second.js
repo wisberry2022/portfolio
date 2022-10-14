@@ -39,35 +39,37 @@ const Second = () => {
     { id: 3, title: '사용기술', icon: true, list: ['scss', 'react', 'redux-toolkit', 'redux-persist', 'mongoDB', 'ExpressJS'] },
   ];
   return (
-    <div className="section bg_set second">
-      <div className="container">
-        <div className="left">
-          <div className="title_box">
-            <h4 className="div_title">MAIN PROJECT (REACT)</h4>
-          </div>
-          <div className="info_desc">
-            <div className="main_info">
-              <h5>정토회 홈페이지 제작</h5>
-              <strong>프로젝트 소개</strong>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas provident repudiandae. Corporis libero ullam distinctio non tenetur itaque iusto ducimus. Est ad, eum animi nobis non, tempora eveniet impedit excepturi numquam esse vero, architecto sequi. Alias, repellat quisquam optio facilis fuga minima distinctio reiciendis praesentium quibusdam, accusamus, maxime provident.
-              </p>
+    <>
+      <div className="section bg_set second">
+        <div className="container">
+          <div className="left">
+            <div className="title_box">
+              <h4 className="div_title">MAIN PROJECT (REACT)</h4>
             </div>
-            <div className="sub_info">
-              {descList.map((it, idx) => {
-                return (
-                  <PhaseTemplate key={idx} data={it} />
-                )
-              })}
+            <div className="info_desc">
+              <div className="main_info">
+                <h5>정토회 홈페이지 제작</h5>
+                <strong>프로젝트 소개</strong>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas provident repudiandae. Corporis libero ullam distinctio non tenetur itaque iusto ducimus. Est ad, eum animi nobis non, tempora eveniet impedit excepturi numquam esse vero, architecto sequi. Alias, repellat quisquam optio facilis fuga minima distinctio reiciendis praesentium quibusdam, accusamus, maxime provident.
+                </p>
+              </div>
+              <div className="sub_info">
+                {descList.map((it, idx) => {
+                  return (
+                    <PhaseTemplate key={idx} data={it} />
+                  )
+                })}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="right">
-          <h4 className="div_title">DEMONSTRATION</h4>
-          <figure className="movie"></figure>
+          <div className="right">
+            <h4 className="div_title">DEMONSTRATION</h4>
+            <figure className="movie"></figure>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -108,57 +108,11 @@
       }
     }
 
-    .tech_box {
+    .deco {
       position: absolute;
-      right: 1.5%;
       bottom: 4%;
-      display: flex;
-
-      @for $i from 1 through 2 {
-        .mark_0#{$i} {
-          background-image: url('../../../public/mark_0#{$i}.png');
-        }
-      }
-
-
-      div {
-        display: flex;
-        gap: 1rem;
-        // border: 0.1rem solid #999;
-        border-radius: 5rem;
-        padding: 1rem 3rem;
-        transition: 0.5s;
-
-        &:first-child {
-          position: relative;
-
-          &::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            width: 0.2rem;
-            height: 2.5rem;
-            background-color: #ddd;
-          }
-        }
-
-        figure {
-          position: relative;
-          width: 3rem;
-          height: 3rem;
-
-          &.mark_01 {
-            background-position-x: 90%;
-          }
-        }
-
-        span {
-          transform: translateY(20%);
-          font-size: 1.5rem;
-        }
-      }
+      right: 1.5%;
+      font-size: 2.5rem;
     }
   }
 }
