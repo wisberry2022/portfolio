@@ -5,6 +5,7 @@
 .second {
   // background-color: #111;
   background-image: url('../../../public/second_background.jpg');
+  background-attachment: fixed;
 
   .container {
     display: flex;

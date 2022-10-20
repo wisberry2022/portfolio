@@ -18,6 +18,8 @@ const FullPage = () => (
     navigationTooltips={['TITLE', 'MAIN Project', 'SIDE Project', 'TOY Project', 'END']}
     licenseKey={'YOUR_KEY_HERE'}
     scrollingSpeed={1000} /* Options here */
+    fixedElements={['secondSection', 'thirdSection', 'fourthSection']}
+    css3={false}
 
     render={({ state, fullpageApi }) => {
       return (
