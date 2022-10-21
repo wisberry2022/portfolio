@@ -18,14 +18,23 @@ const PhaseTemplate = ({ data }) => {
           })}
         </ul>
         :
-        <ul>
-          {data.list.map((it, idx) => {
-            return (
-              <li key={idx}>
-                {it}
-              </li>
-            )
-          })}
+        <ul className="desc_list">
+          {data.linkFlag ?
+            data.list.map((it, idx) => {
+              return (
+                <li key={idx}>
+                  {idx >= 1 ? <a href={it} target="_blank">{data.title.split(' / ')[idx]}</a> : it}
+                </li>
+              )
+            })
+            :
+            data.list.map((it, idx) => {
+              return (
+                <li key={idx}>
+                  {it}
+                </li>
+              )
+            })}
         </ul>
       }
     </div>
@@ -34,9 +43,9 @@ const PhaseTemplate = ({ data }) => {
 
 const Second = () => {
   const descList = [
-    { id: 1, title: '배포/링크', icon: false, list: ['HEROKU'] },
-    { id: 2, title: '구현중점', icon: false, list: ['CRUD 구현', '로그인/로그아웃 상태유지'] },
-    { id: 3, title: '사용기술', icon: true, list: ['scss', 'react', 'redux-toolkit', 'redux-persist', 'mongoDB', 'ExpressJS'] },
+    { id: 1, title: '배포 플랫폼 / 링크 / README', icon: false, linkFlag: true, list: ['HEROKU', 'https://jungto-page.herokuapp.com/', 'https://skillful-mandevilla-651.notion.site/README-fee75e1f37a44267a4f44c192b775ce7'] },
+    { id: 2, title: '구현중점', icon: false, linkFlag: false, list: ['CRUD 구현', '로그인/로그아웃 상태유지', '행사신청 및 관리', 'SPA 구현'] },
+    { id: 3, title: '사용기술', icon: true, linkFlag: false, list: ['scss', 'react', 'react-router-dom', 'ExpressJS', 'redux-toolkit', 'redux-persist', 'mongoDB'] },
   ];
   return (
     <>
@@ -51,7 +60,7 @@ const Second = () => {
                 <h5>정토회 홈페이지 제작</h5>
                 <strong>프로젝트 소개</strong>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas provident repudiandae. Corporis libero ullam distinctio non tenetur itaque iusto ducimus. Est ad, eum animi nobis non, tempora eveniet impedit excepturi numquam esse vero, architecto sequi. Alias, repellat quisquam optio facilis fuga minima distinctio reiciendis praesentium quibusdam, accusamus, maxime provident.
+                  사용자들이 직접 회원가입하여 로그인하고, 그에 따라 실질적으로 이용할 수 있는 서비스를 구현해보고자 정토회 홈페이지 제작을 기획하게 되었습니다. <br />게시글, 행사신청과 같은 서비스를 구현하기 위해 서버를 본격적으로 활용하였습니다. 또한 실질적으로 정보를 담아두기 위해  MongoDB를 활용하여 데이터베이스까지 연결하였습니다. React와 ExpressJS, MongoDB를 활용하여 사용자들이 회원가입하여, 이를 이용할 수 있는 서비스를 구현하였습니다.
                 </p>
               </div>
               <div className="sub_info">

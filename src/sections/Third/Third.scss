@@ -40,6 +40,28 @@
           flex: 1;
           height: 31rem;
 
+          &.left {
+            .tech_list {
+              @for $i from 1 through 4 {
+                .itm0#{$i} {
+                  background-image: url('../../../public/tech_logo_0#{$i}.png');
+                  background-size: contain;
+                }
+              }
+            }
+          }
+
+          &.right {
+            .tech_list {
+              @for $i from 1 through 5 {
+                .itm0#{$i} {
+                  background-image: url('../../../public/tech_logo_0#{$i}.png');
+                  background-size: contain;
+                }
+              }
+            }
+          }
+
           .sub_desc {
             display: flex;
             flex-wrap: wrap;
@@ -65,23 +87,42 @@
                 font-size: 1.3rem;
               }
 
+              .link_list {
+                display: flex;
+                gap: 1.5rem;
+
+                >li {
+                  font-size: 1.3rem;
+                  font-weight: 400;
+
+                  >a {
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                  }
+                }
+              }
+
               .tech_list {
                 display: flex;
                 justify-content: flex-start;
-                margin-left: -2.2rem;
+                gap: 2.5rem;
+                width: 60rem;
+                margin-left: -1rem;
 
                 >li {
                   width: 10rem;
 
                   figure {
-                    outline: 1px solid #000;
+                    // outline: 0.1rem solid #ddd;
                     margin: 0 auto .5rem auto;
+                    padding: 3rem;
                     width: 5rem;
                     height: 5rem;
                   }
 
                   span {
                     text-align: center;
+                    font-weight: 500;
                   }
                 }
               }
@@ -124,7 +165,7 @@
 
               p {
                 font-size: 1.5rem;
-                line-height: 1.2;
+                line-height: 1.4;
               }
 
 
@@ -140,9 +181,22 @@
       display: flex;
       gap: 2.5rem;
 
-      >figure {
-        outline: 1px solid #000;
+      >a {
         flex: 1;
+
+        >figure {
+          width: 100%;
+          height: 100%;
+
+          &.left {}
+
+          &.right {
+
+            background-image: url('../../../public/homepage.png');
+            background-position-y: 0;
+          }
+        }
+
       }
     }
   }

@@ -19,7 +19,7 @@
 
         &.intro {
           .div_title {
-            margin-bottom: 1.5rem;
+            margin-bottom: 4rem;
             font-size: 2rem;
           }
 
@@ -34,7 +34,7 @@
 
             p {
               font-size: 1.4rem;
-              line-height: 1.213;
+              line-height: 1.313;
             }
           }
 
@@ -42,6 +42,7 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
+
 
             >li:last-child {
               strong {
@@ -68,14 +69,21 @@
                 display: flex;
                 gap: 1.5rem;
 
+                @for $i from 1 through 5 {
+                  .itm0#{$i} {
+                    background-image: url('../../../public/toy_tech_0#{$i}.png');
+                    background-size: contain;
+                  }
+                }
+
                 >li {
                   width: 10rem;
 
                   figure {
-                    outline: 1px solid #000;
+                    // outline: 1px solid #000;
                     margin-bottom: .5rem;
                     width: 100%;
-                    height: 3rem;
+                    height: 7rem;
                   }
 
                   strong {
@@ -104,10 +112,11 @@
               font-size: 1.5rem;
             }
 
-            strong {
+            a {
               display: block;
-              font-size: 1.3rem;
-              font-weight: 300;
+              font-size: 1.6rem;
+              font-weight: 500;
+              text-decoration: none;
             }
           }
         }

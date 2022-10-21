@@ -5,8 +5,10 @@ const ToyTemplate = ({ data }) => {
     <div className="toy">
       <figure className={`bg_set itm0${data.id}`}></figure>
       <div className="desc_box">
-        <h4>{data.title}</h4>
-        <strong>{data.link}</strong>
+        <h4>
+          <a href={data.link}>{data.title}</a>
+        </h4>
+        {/* <strong>{data.link}</strong> */}
       </div>
     </div>
   )
@@ -14,17 +16,16 @@ const ToyTemplate = ({ data }) => {
 
 const Fourth = () => {
   const dataList = [
-    { id: 1, title: '배포', icon: false, contents: 'github pages' },
-    { id: 2, title: '사용기술', icon: true, contents: ['HTML5', 'CSS', 'SCSS', 'Vanilla JS', 'JQUERY'] },
-    { id: 3, title: '구현페이지 목록', icon: false, contents: ['site1', 'site2', 'site3', 'site4', 'site5'] },
+    // { id: 1, title: '배포', icon: false, contents: 'github pages' },
+    { id: 1, title: '사용기술', icon: true, contents: ['HTML5', 'CSS', 'SCSS', 'Vanilla JS', 'JQUERY'] },
   ];
 
   const siteList = [
-    { id: 1, title: 'site1', link: 'Lorem ipsum dolor sit amet' },
-    { id: 2, title: 'site2', link: 'Lorem ipsum dolor sit amet' },
-    { id: 3, title: 'site3', link: 'Lorem ipsum dolor sit amet' },
-    { id: 4, title: 'site4', link: 'Lorem ipsum dolor sit amet' },
-    { id: 5, title: 'site5', link: 'Lorem ipsum dolor sit amet' },
+    { id: 1, title: 'SHISEIDO', link: 'https://wisberry2022.github.io/web_practice/shiseido/' },
+    { id: 2, title: 'SONY STORE', link: 'https://wisberry2022.github.io/web_practice/sony/' },
+    { id: 3, title: '정관장', link: 'https://wisberry2022.github.io/web_practice/jgj/' },
+    { id: 4, title: '민음사', link: 'https://wisberry2022.github.io/web_practice/minumsa/' },
+    { id: 5, title: 'MBC', link: 'https://wisberry2022.github.io/web_practice/mbc/#!' },
   ]
   return (
     <>
@@ -36,7 +37,10 @@ const Fourth = () => {
               <div className="info_desc">
                 <strong>프로젝트 소개</strong>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure similique deleniti nostrum fugit. Nam nobis quidem eum hic iusto veniam aperiam magni, nisi et ut maiores consequuntur! Doloribus, velit quia!
+                  HTML/CSS/JS/JQUERY를 활용하여 웹 사이트의 메인페이지를 제작하였습니다.<br />
+                  탭 메뉴, 슬라이드, 동영상 재생 등 메인 페이지에서<br />
+                  사용되는 다양한 기능을 구현하였습니다. <br />
+                  TOY PROJECT는 github pages를 이용하여 배포하였습니다.
                 </p>
               </div>
               <ul className="desc_list">
