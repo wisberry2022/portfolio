@@ -98,11 +98,31 @@
         }
 
         &.toy {
-          >figure {
-            outline: 1px solid #000;
+
+          @for $i from 1 through 5 {
+            .itm0#{$i} {
+              background-image: url('../../../public/toy_bg_0#{$i}.png');
+              background-position-y: 0;
+              transition: 5s;
+
+              &:hover {
+                background-position-y: 100%;
+              }
+            }
+          }
+
+          >a {
+            // outline: 1px solid #000;
+            display: block;
             margin-bottom: 1rem;
             height: 30rem;
+
+            figure {
+              // outline: 1px solid #000;
+              height: 100%;
+            }
           }
+
 
           .desc_box {
             text-align: center;
@@ -117,6 +137,7 @@
               font-size: 1.6rem;
               font-weight: 500;
               text-decoration: none;
+              color: #333;
             }
           }
         }

@@ -1,4 +1,24 @@
 import './Second.scss';
+import YouTube from 'react-youtube';
+
+const YTP = ({ link }) => {
+  const _onReady = (event) => {
+    event.target.pauseVideo();
+  }
+  const opts = {
+    height: '650rem',
+    width: '100%',
+    playerVars: {
+      autoplay: 0,
+      controls: 1,
+      fs: 1,
+      rel: 0,
+      loop: 1,
+      modestbranding: 1,
+    }
+  }
+  return <YouTube videoId={link} opts={opts} onReady={_onReady} />
+}
 
 const PhaseTemplate = ({ data }) => {
   return (
@@ -23,7 +43,7 @@ const PhaseTemplate = ({ data }) => {
             data.list.map((it, idx) => {
               return (
                 <li key={idx}>
-                  {idx >= 1 ? <a href={it} target="_blank">{data.title.split(' / ')[idx]}</a> : it}
+                  {idx >= 1 ? <a href={it} target="_blank" rel="noopener noreferrer">{data.title.split(' / ')[idx]}</a> : it}
                 </li>
               )
             })
@@ -74,7 +94,9 @@ const Second = () => {
           </div>
           <div className="right">
             <h4 className="div_title">DEMONSTRATION</h4>
-            <figure className="movie"></figure>
+            <figure className="movie">
+              <YTP link='UQSlJOFWOIE' />
+            </figure>
           </div>
         </div>
       </div>

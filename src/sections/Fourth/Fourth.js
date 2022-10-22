@@ -3,12 +3,13 @@ import './Fourth.scss';
 const ToyTemplate = ({ data }) => {
   return (
     <div className="toy">
-      <figure className={`bg_set itm0${data.id}`}></figure>
+      <a href={data.link} target="_blank" rel="noopener noreferrer">
+        <figure className={`bg_set itm0${data.id}`}></figure>
+      </a>
       <div className="desc_box">
         <h4>
           <a href={data.link}>{data.title}</a>
         </h4>
-        {/* <strong>{data.link}</strong> */}
       </div>
     </div>
   )
@@ -22,10 +23,10 @@ const Fourth = () => {
 
   const siteList = [
     { id: 1, title: 'SHISEIDO', link: 'https://wisberry2022.github.io/web_practice/shiseido/' },
-    { id: 2, title: 'SONY STORE', link: 'https://wisberry2022.github.io/web_practice/sony/' },
-    { id: 3, title: '정관장', link: 'https://wisberry2022.github.io/web_practice/jgj/' },
-    { id: 4, title: '민음사', link: 'https://wisberry2022.github.io/web_practice/minumsa/' },
-    { id: 5, title: 'MBC', link: 'https://wisberry2022.github.io/web_practice/mbc/#!' },
+    { id: 2, title: 'SONY STORE(Responsive Web)', link: 'https://wisberry2022.github.io/web_practice/sony/' },
+    { id: 3, title: '정관장(Responsive Web)', link: 'https://wisberry2022.github.io/web_practice/jgj/' },
+    { id: 4, title: '민음사(Responsive Web)', link: 'https://wisberry2022.github.io/web_practice/minumsa/' },
+    { id: 5, title: 'MBC(Responsive Web)', link: 'https://wisberry2022.github.io/web_practice/mbc/#!' },
   ]
   return (
     <>

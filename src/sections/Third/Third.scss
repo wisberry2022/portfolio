@@ -98,6 +98,7 @@
                   >a {
                     font-size: 1.3rem;
                     text-decoration: none;
+                    color: #333;
                   }
                 }
               }
@@ -188,12 +189,24 @@
           width: 100%;
           height: 100%;
 
-          &.left {}
+          &.left {
+            background-image: url('../../../public/homepage_02.png');
+            background-position-y: 0;
+            transition: 5s;
+
+            &:hover {
+              background-position-y: 100%;
+            }
+          }
 
           &.right {
-
             background-image: url('../../../public/homepage.png');
             background-position-y: 0;
+            transition: 5s;
+
+            &:hover {
+              background-position-y: 100%;
+            }
           }
         }
 

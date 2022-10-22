@@ -13,7 +13,7 @@ const SubTemplate = ({ subData }) => {
                   {it.contents.map((its, num) => {
                     return (
                       <li key={num}>
-                        {num >= 1 ? <a href={its} target="_blank">{it.title.split(' / ')[num]}</a> : its}
+                        {num >= 1 ? <a href={its} target="_blank" rel="noopener noreferrer">{it.title.split(' / ')[num]}</a> : its}
                       </li>
                     )
                   })}
@@ -61,7 +61,7 @@ const Third = () => {
     {
       id: 1, title: '부산교통공사 홈페이지 제작', intro: '지하철은 배차간격이 정확하여 정시출발, 도착을 보장하지만 열차가 도착하는 시간을 항상 숙지할 수는 없습니다. 따라서 지하철 이용 전 탑승예정역의 열차 도착 시간을 알 수 있으면 좋겠다라고 생각하였습니다. 이를 위해 API를 활용하여 사용자들이 실시간으로 조회할 수 있는 열차 시간표를 제공하는 기능을 구현하였습니다', subData: [
         { id: 1, title: '배포플랫폼 / 링크 / README', linkFlag: true, contents: ['HEROKU', 'https://practice04.herokuapp.com/', 'https://skillful-mandevilla-651.notion.site/README-fd129273118447e1b38a9b4e839c279d'] },
-        { id: 2, title: '사용API', linkFlag: false, contents: '부산교통공사 API' },
+        { id: 2, title: '사용API', linkFlag: false, contents: '부산 도시철도 열차시각표 조회 서비스 API(공공데이터포털)' },
         { id: 3, title: '사용기술', linkFlag: false, contents: ['scss', 'react', 'react-router-dom', 'ExpressJS'] },
       ]
     },
@@ -91,15 +91,11 @@ const Third = () => {
             </div>
           </div>
           <div className="bottom">
-            <a href="#">
-              <figure className="left bg_set">
-
-              </figure>
+            <a href="https://practice04.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <figure className="left bg_set"></figure>
             </a>
-            <a href="#">
-              <figure className="right bg_set">
-
-              </figure>
+            <a href="https://movie-page.herokuapp.com/" rel="noopener noreferrer" target="_blank">
+              <figure className="right bg_set"></figure>
             </a>
           </div>
         </div>
