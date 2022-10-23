@@ -1,18 +1,32 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6656fe44.css",
-    "main.js": "/portfolio/static/js/main.c92c0c26.js",
+    "main.css": "/portfolio/static/css/main.528ab33f.css",
+    "main.js": "/portfolio/static/js/main.95db3e66.js",
     "static/media/first_background.jpg": "/portfolio/static/media/first_background.74d40233ab790ffa0ba6.jpg",
+    "static/media/toy_bg_02.png": "/portfolio/static/media/toy_bg_02.35b6326045ef582a6e69.png",
     "static/media/fifth_background.jpg": "/portfolio/static/media/fifth_background.113a6aff8be2a895056c.jpg",
+    "static/media/toy_bg_05.png": "/portfolio/static/media/toy_bg_05.697c4e370d1eebc04e16.png",
     "static/media/second_background.jpg": "/portfolio/static/media/second_background.250387e4ffd268d26134.jpg",
-    "static/media/fourth-background.jpg": "/portfolio/static/media/fourth-background.b39a7ec3ba78af7406f5.jpg",
-    "static/media/third_background.jpg": "/portfolio/static/media/third_background.5b80e9183109d3e7fe11.jpg",
+    "static/media/toy_bg_03.png": "/portfolio/static/media/toy_bg_03.9bb29c0b1987654ca3b2.png",
+    "static/media/toy_bg_01.png": "/portfolio/static/media/toy_bg_01.861dfc3541b2d507344f.png",
+    "static/media/toy_bg_04.png": "/portfolio/static/media/toy_bg_04.30772c8f21287d62d9dc.png",
+    "static/media/homepage.png": "/portfolio/static/media/homepage.443418f8bb7ca5e279cd.png",
+    "static/media/homepage_02.png": "/portfolio/static/media/homepage_02.a7c08f5bf020dc16da18.png",
+    "static/media/toy_tech_05.png": "/portfolio/static/media/toy_tech_05.0998ab8e1b6affca443d.png",
+    "static/media/tech_logo_01.png": "/portfolio/static/media/tech_logo_01.7cdbf6b5889c42b3e490.png",
+    "static/media/toy_tech_03.png": "/portfolio/static/media/toy_tech_03.7cdbf6b5889c42b3e490.png",
+    "static/media/toy_tech_01.png": "/portfolio/static/media/toy_tech_01.5f77e90e11607bf9b3e1.png",
+    "static/media/toy_tech_02.png": "/portfolio/static/media/toy_tech_02.4e67641bb68b658d9b2b.png",
+    "static/media/toy_tech_04.png": "/portfolio/static/media/toy_tech_04.7b7d39612cf606d09047.png",
+    "static/media/tech_logo_03.png": "/portfolio/static/media/tech_logo_03.e544f0be5b97bdd26f94.png",
+    "static/media/tech_logo_05.png": "/portfolio/static/media/tech_logo_05.4bebbe1e5361c338b767.png",
+    "static/media/tech_logo_06.png": "/portfolio/static/media/tech_logo_06.4bebbe1e5361c338b767.png",
     "index.html": "/portfolio/index.html",
-    "main.6656fe44.css.map": "/portfolio/static/css/main.6656fe44.css.map",
-    "main.c92c0c26.js.map": "/portfolio/static/js/main.c92c0c26.js.map"
+    "main.528ab33f.css.map": "/portfolio/static/css/main.528ab33f.css.map",
+    "main.95db3e66.js.map": "/portfolio/static/js/main.95db3e66.js.map"
   },
   "entrypoints": [
-    "static/css/main.6656fe44.css",
-    "static/js/main.c92c0c26.js"
+    "static/css/main.528ab33f.css",
+    "static/js/main.95db3e66.js"
   ]
 }
