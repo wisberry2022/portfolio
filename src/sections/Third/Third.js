@@ -67,7 +67,7 @@ const Third = () => {
     },
     {
       id: 2, title: 'CGV 홈페이지 제작', intro: '한 주의 박스오피스 정보를 출력하고, 사용자가 검색하고 싶은 영화를 검색하여 그 결과를 받아보는 시스템을 구현하고자 하였습니다. 박스오피스 데이터 활용을 위해 영화진흥위원회 API를 사용하였으며, 영화 검색 기능 구현을 위해 네이버 오픈API를 활용하였습니다.', subData: [
-        { id: 1, title: '배포플랫폼 / 링크 / README', linkFlag: true, contents: ['HEROKU', 'https://movie-page.herokuapp.com/', 'https://skillful-mandevilla-651.notion.site/CGV-README-db843fd2030a4082b443a6713d308f61'] },
+        { id: 1, title: '배포플랫폼 / 링크 / README', linkFlag: true, contents: ['KOYEB', 'https://cgv-wisberry2022.koyeb.app/'] },
         { id: 2, title: '사용API', linkFlag: false, contents: 'KOBIS / 네이버 검색 API(영화)' },
         { id: 3, title: '사용기술', linkFlag: false, contents: ['scss', 'react', 'react-router-dom', 'ExpressJS', 'redux-toolkit'] },
       ]
